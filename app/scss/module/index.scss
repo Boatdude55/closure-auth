@@ -1,0 +1,5 @@
+.app {
+	&-view {
+		@include xy-grid-container;
+	}
+}

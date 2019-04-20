@@ -1,0 +1,67 @@
+.form {
+	@include xy-grid;
+	&-header {
+		@include xy-cell;
+		&-title {
+			font-size: 24px;
+			font-weight: 400;
+			height: 52px;
+			line-height: 26.4px;
+			text-align: center;
+		}
+
+		&-subtitle {
+			font-size: 14px;
+			font-weight: 300;
+			height: 52px;
+			line-height: 16.8px;
+			text-align: center;
+		}
+	}
+
+	&-content {
+		@include xy-cell;
+	}
+
+	&-footer {
+		@include xy-cell;
+		&-button {
+			@include button-base;
+  			@include button-style;
+  			@include border-radius($radius);
+		}
+	}
+
+	&-item {
+		font-size: 14px;
+		font-weight: 400;
+		margin-top: 10px;
+		margin-bottom: 10px;
+		line-height: 21px;
+		&-label {
+			@include form-label;
+		}
+		&-control {
+
+		}
+		&-info {
+			font-size: 12px;
+		}
+		&-error {
+			margin-top: $form-spacing * -0.5;
+			margin-bottom: $form-spacing;
+
+			font-size: $input-error-font-size;
+			font-weight: $input-error-font-weight;
+			color: $input-error-color;
+
+			&-content {
+				list-style: none;
+				.form-error {
+
+				}
+			}
+		}
+	}
+
+}

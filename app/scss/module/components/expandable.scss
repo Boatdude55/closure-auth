@@ -1,0 +1,5 @@
+.expandle-container {
+	&-content {
+		@include xy-grid-container;
+	}
+}
