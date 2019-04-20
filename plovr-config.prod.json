@@ -1,0 +1,45 @@
+{
+	"id": "multi_stage_auth",
+	"paths": "app/js",
+	"inputs": [
+		"app/js/bootstrap.js"
+	],
+	"externs": [
+		"firebase-js-sdk/packages/firebase/externs/firebase-externs.js",
+		"firebase-js-sdk/packages/firebase/externs/firebase-error-externs.js",
+		"firebase-js-sdk/packages/firebase/externs/firebase-app-internal-externs.js",
+		"firebase-js-sdk/packages/firebase/externs/firebase-app-externs.js",
+		"firebase-js-sdk/packages/firebase/externs/firebase-error-externs.js",
+		"firebase-js-sdk/packages/firebase/externs/firebase-auth-externs.js",
+		"externs/plaid.js",
+		"externs/jquery-3.3.js"
+	],
+	"closure-library": "google/closure-library/closure/goog",
+	"mode": "ADVANCED",
+	"level": "VERBOSE",
+	"pretty-print": false,
+	"debug": false,
+	"define": {
+	 	"goog.DEBUG": false
+	},
+	"print-input-delimiter": false,
+	"output-file": "build/js/app.min.js",
+	"jsdoc-html-output-path": "public",
+	"checks": {
+		"visibility": "ERROR",
+		"checkRegExp": "ERROR",
+		"checkTypes": "ERROR",
+		"checkVars": "ERROR",
+		"deprecated": "OFF",
+		"fileoverviewTags": "ERROR",
+		"invalidCasts": "ERROR",
+		"missingProperties": "ERROR",
+		"nonStandardJsDocs": "ERROR",
+		"undefinedVars": "ERROR"
+	},
+	"experimental-compiler-options": {
+		"instrumentForCoverage": true,
+		"checkShadowVars": "ERROR",
+		"languageIn": "ECMASCRIPT_NEXT"
+	}
+}
